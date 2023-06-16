@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20230616114212",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "document",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Document",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "document",
+      "relationshipName": "country",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
